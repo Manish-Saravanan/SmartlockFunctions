@@ -49,25 +49,7 @@ export const sendNotification =
       }
 
       try {
-        const publicKey = "-----BEGIN CERTIFICATE-----\n" +
-          "MIIDHDCCAgSgAwIBAgIIDPP+hlnRm74wDQYJKoZIhvcNAQEFBQAwMTEvMC0GA1UE\n" +
-          "AxMmc2VjdXJldG9rZW4uc3lzdGVtLmdzZXJ2aWNlYWNjb3VudC5jb20wHhcNMjEw\n" +
-          "NjA5MDkyMDIxWhcNMjEwNjI1MjEzNTIxWjAxMS8wLQYDVQQDEyZzZWN1cmV0b2tl\n" +
-          "bi5zeXN0ZW0uZ3NlcnZpY2VhY2NvdW50LmNvbTCCASIwDQYJKoZIhvcNAQEBBQAD\n" +
-          "ggEPADCCAQoCggEBALvnBUrnwYG71itcw7lAO03vk32fEha+2LUEEaqw2j2tJqBA\n" +
-          "A3bKukPH3zjWrI0tz67WCEsc6gwkG6zHigLzU9Bs1vghtqXoe5iZnHi2hFaLELNn\n" +
-          "MPyNjSB3mNi5T02Dw+63gTRrAcQ8NN3eXiQpgHtwVVC56uOCa4Jc8AVmuvzMtXNt\n" +
-          "pXafACI7IeRazqlGjHUVZOStnMRH9VieE2e7PZFtbrV19ITFbQdHjHLO6V9mB7Qx\n" +
-          "kBFuvzJNnGxgf2U1q7poUiDYI12saPVLPeEuJKagkne3LrjCZS6EevxYqEMa0Whf\n" +
-          "ZaY9ODGfXc9hYV9Zdw2Scqj8KbEAainS/DbymmUCAwEAAaM4MDYwDAYDVR0TAQH/\n" +
-          "BAIwADAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwIwDQYJ\n" +
-          "KoZIhvcNAQEFBQADggEBAD6gl5LlKlOvU49LNvKKBrIeG7cF4xYgmg1bCUNgg8sg\n" +
-          "lF7kce/MG8r1rXZPeqHrfdeIC9dvTLLD5eot1R5c1brv7oA0lZV8s9EPwSaCWJvu\n" +
-          "vl688rYloOR8+bbCjoEuaWFF5mh1OGGdnG8eTdzrz0NYCt43oCcb2X1M4vC9v81T\n" +
-          "E5OxwTsio+fI369Px9X25klURbXauh6FyUQKnJ8wUoVwvNQAFzmzSAZbTpCA5Z4t\n" +
-          "QLRph2KTYIZSveMvytQYet3UtwNRm2+7E5FnLQpphKYp/kh+QtQRg5pVrVO9pvws\n" +
-          "HuGEpFaITH6w4qF8MFwYZ/rTo8/+n+8UoIClQUjES5Y=\n" +
-          "-----END CERTIFICATE-----\n";
+        const publicKey = "TODO: Insert public key";
         // const decodedIdToken = await admin.auth().verifyIdToken(idToken);
         // functions.logger.log("ID Token correctly decoded", decodedIdToken);
         jwt.verify(idToken, publicKey, {algorithms: ["RS256"]},
